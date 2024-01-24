@@ -59,7 +59,8 @@ MSFA23
 
 ```
 
-- Clear separation of concerns with dedicated folders for Commands and Queries. Additionally, a 'Shared' folder is introduced, housing subfolders for Data Transfer Objects (Dto) and Specifications
+- Create a 'Command' and 'Query' folder to separate command and query responsibilities in the application layer.
+Introduce a 'Shared' folder in the application layer for Data Transfer Objects (DTOs) and Specifications.
 
 ```bash
 
@@ -97,4 +98,28 @@ MSFA23
   > Organizing similar domain entities within a single parent folder improves code structure and enhances maintainability. This practice makes it easier to locate and manage related entities, facilitating a more intuitive and efficient development process.
   
   
+ - Dedicate a separate startup file for each independent component within the infrastructure. Register these individual startup files in a common startup file. Also, register middleware in their respective startup files.
+
+```bash
+
+├──Infrastructure
+|    ├ LocationUpdate   
+|    |   ├ Location
+|    |   ├ LocationHub
+|    |   ├ LocationMiddleWare
+|    |   ├ Startup
+|    |
+|    ├ Startup
+
+```
+ -
+   _Why:_
+
+  > This approach enhances modularity, maintainability, and scalability of the project.
   
+  
+   - Dedicate a separate startup file for each independent component within the infrastructure. Register these individual startup files in a common startup file. Also, register middleware in their respective startup files.
+
+ _Why:_
+
+  > This approach enhances modularity, maintainability, and scalability of the project.
