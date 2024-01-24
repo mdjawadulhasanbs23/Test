@@ -73,8 +73,28 @@ MSFA23
 |          ├ Dtos
 |             ├ CreateOrderDto.cs
 |          ├ Specifications
+|             ├ GetOrderByCustomerIdSpec.cs
 |  
 |     
-|  
 
 ```
+
+- Keep similar domain entities within a single parent folder. 
+
+```bash
+
+├──Domain
+|    ├ Area   
+|       ├ AreaCategory
+|       ├ AreaMaster
+|       ├ MarketArea
+|       ├ DepotArea
+
+```
+
+ _Why:_
+
+  > Organizing similar domain entities within a single parent folder improves code structure and enhances maintainability. This practice makes it easier to locate and manage related entities, facilitating a more intuitive and efficient development process.
+  
+  
+  
