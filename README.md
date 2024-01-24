@@ -138,3 +138,10 @@ UpdateCustomerLocation()
 _Why:_
 
   > It makes it more natural to read the source code.
+  
+  
+- Removed unused using directives.
+
+  _Why:_
+
+  > To keep the code clean and improve maintainability. Unused directives can clutter the file and make it harder to identify the actual dependencies of the code.
