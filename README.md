@@ -48,9 +48,6 @@ MSFA23
 |  |
 |  ├ Migrators  
 |  |    ├ Migrators.MSSQL  
-|  |    ├ Migrators.MySQL
-|  |    ├ Migrators.Oracle
-|  |    ├ Migrators.PostgreSQL
 |  |
 |  ├ Host
 |  ├ Infrastructure
