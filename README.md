@@ -38,7 +38,7 @@ Before you begin, ensure that you have the following installed on your machine:
 
 - The Clean Architecture project, named MSFA23, adheres to a well-defined structure with a clear separation of concerns. It organizes code into distinct layers such as Core, Migrators, Host, and Infrastructure, following a modular design that enhances maintainability and scalability.
 
-```bash
+```
 MSFA23
 ├──src
 |  ├ Core   
@@ -58,6 +58,7 @@ MSFA23
 ├──test
 
 ```
+
 - Host contains the API controllers and startup logic for an ASP.NET Core application, including the container setup. This is the entry point of the application, and it also contains other static files such as logs, localization JSONs, images, email templates, and most importantly, the configuration files.
 
 
@@ -68,8 +69,8 @@ MSFA23
 |   ├── Email Templates
 |   ├── Extensions
 |   ├── Files
-│   |   ├── Images
-│   |   └── Documents
+|   |   ├── Images
+|   |   └── Documents
 |   ├── Localization
 |   ├── Logs
 |   └── appsettings.json
@@ -98,7 +99,7 @@ MSFA23
 - Create a 'Command' and 'Query' folder to separate command and query responsibilities in the application layer.
 Introduce a 'Shared' folder in the application layer for Data Transfer Objects (DTOs) and Specifications.
 
-```bash
+```
 
 ├──Application
 |    ├ Order   
@@ -118,7 +119,7 @@ Introduce a 'Shared' folder in the application layer for Data Transfer Objects (
 
 - Keep similar domain entities within a single parent folder. 
 
-```bash
+```
 
 ├──Domain
 |    ├ Area   
@@ -136,7 +137,7 @@ Introduce a 'Shared' folder in the application layer for Data Transfer Objects (
   
  - Dedicate a separate startup file for each independent component within the infrastructure. Register these individual startup files in a common startup file. Also, register middleware in their respective startup files.
 
-```bash
+```
 
 ├──Infrastructure
 |    ├ LocationUpdate   
@@ -168,8 +169,9 @@ Introduce a 'Shared' folder in the application layer for Data Transfer Objects (
   
   - Make your names search-able with meaningful distinctions avoid shortened names. For functions use long, descriptive names. A function name should be a verb or a verb phrase, and it needs to communicate its intention.
 
-```bash
-UpdateCustomerLocation()  
+```
+UpdateCustomerLocation() 
+
 ```
 _Why:_
 
