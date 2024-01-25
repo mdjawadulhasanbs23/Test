@@ -58,6 +58,42 @@ MSFA23
 ├──test
 
 ```
+- Host contains the API controllers and startup logic for an ASP.NET Core application, including the container setup. This is the entry point of the application, and it also contains other static files such as logs, localization JSONs, images, email templates, and most importantly, the configuration files.
+
+
+```
+├── Host
+|   ├── Configurations
+|   ├── Controllers
+|   ├── Email Templates
+|   ├── Extensions
+|   ├── Files
+│   |   ├── Images
+│   |   └── Documents
+|   ├── Localization
+|   ├── Logs
+|   └── appsettings.json
+
+```
+> Host project depends on Application, Infrastructure, Migration Projects
+
+- This project structure follows a feature-based organization,separation of classes by type is recommended for more complex features, maintaining a clean and organized codebase. It contains application-specific business rules and use cases
+
+```
+├── Core
+|   ├── Application
+|   |   ├── Auditing
+|   |   ├── Catalog
+|   |   ├── Common
+|   |   ├── Dashboard
+|   |   ├── Identity
+|   |   ├── Area
+|   |   ├── Journey
+|   |   ├── Order
+
+```
+ >Application project depends only on the Core projects which are Shared and Domain.
+
 
 - Create a 'Command' and 'Query' folder to separate command and query responsibilities in the application layer.
 Introduce a 'Shared' folder in the application layer for Data Transfer Objects (DTOs) and Specifications.
@@ -96,7 +132,7 @@ Introduce a 'Shared' folder in the application layer for Data Transfer Objects (
  _Why:_
 
   > Organizing similar domain entities within a single parent folder improves code structure and enhances maintainability. This practice makes it easier to locate and manage related entities, facilitating a more intuitive and efficient development process.
-  
+
   
  - Dedicate a separate startup file for each independent component within the infrastructure. Register these individual startup files in a common startup file. Also, register middleware in their respective startup files.
 
@@ -149,7 +185,7 @@ _Why:_
 
 
   
-  ------------------------- TBA
+  ------------------------- TBA ---------------------
   
   ### API design
 
