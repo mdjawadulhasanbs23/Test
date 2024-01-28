@@ -1,7 +1,4 @@
-# MSFA
-
-Welcome to our MSFA GitHub repository! This repository contains the source code for our MSFA application. Below, you'll find essential information to help you understand, contribute to, and deploy the project.
-
+# How to Run the Project Locally
 ## Prerequisites
 
 Before you begin, ensure that you have the following installed on your machine:
@@ -10,18 +7,36 @@ Before you begin, ensure that you have the following installed on your machine:
 - [Visual Studio](https://visualstudio.microsoft.com/) or [Visual Studio Code](https://code.visualstudio.com/) 
 - [SQL Server Management Studio (SSMS)](https://learn.microsoft.com/en-us/sql/ssms/download-sql-server-management-studio-ssms?view=sql-server-ver16)
 
-
-## Code Review Checklist
-
-Before submitting a pull request, please make sure to go through the following checklist:
-
-1. **Code Quality**: Ensure that your code adheres to our coding standards and best practices.
-2. **Documentation**: Update or create documentation for any new features, APIs, or changes to existing functionality.
-3. **Code Structure**: Verify that your code is well-organized and follows the project's directory structure.
-4. **Security**: Check for security vulnerabilities and follow secure coding practices.
-5. **Comments**: Include meaningful comments in your code to enhance readability.
-6. **Compatibility**: Ensure your changes do not break existing functionality and are compatible with the current codebase.
-7. **Pull Request Description**: Provide a clear and concise description of your changes in the pull request.
+# Code Review Checklist
+ 
+### Requirements & Functionality
+- [ ] Have the requirements been met? The new feature will not negatively impact existing functionality?
+ 
+### Maintainability & Best Practices
+- [ ] Is the code easy to read, proper naming convention followed and code method/class not too long?
+- [ ] Is the code not repeated (DRY Principle) and followed single responsibility principle?
+- [ ] Relevant Parameters are configurable? (Arch)
+- [ ] Are different errors handled correctly? Are errors and warnings logged?
+- [ ] Add meaningful Comments and avoid unnecessary comments?
+ 
+### Code Formatting
+- [ ] Is the code formatted correctly? Unecessary whitespace removed? Same formatting throughout the code base. Code is fitted to the monitor screen? Properly Aligned?
+ 
+### Performance
+- [ ] Optimize code- DB query, Looping, Conditions, Proper data type
+ 
+### Version Controlling
+- [ ] Maintain environment and feature branch
+- [ ] Proper commit message
+- [ ] Pull/merge request
+- [ ] Use tagging
+ 
+### Testing
+- [ ] Unit test code coverage
+- [ ] Integration test feature coverage
+ 
+### Security
+- [ ] Use Sonarlint and security vulnerability analysis tool
 
 ## How to Run the Project Locally
 
