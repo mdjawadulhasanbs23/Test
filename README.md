@@ -132,9 +132,10 @@ Introduce a 'Shared' folder in the application layer for Data Transfer Objects (
 ├──Application
 |    ├ Order   
 |       ├ Command
-|          ├ CreateOrderRequest
+|          ├ CreateOrderRequest.cs
+|          ├ CreateOrderRequestValidator.cs
 |       ├ Query
-|          ├ GetOrderListRequest
+|          ├ GetOrderListRequest.cs
 |       ├ Shared
 |          ├ Dtos
 |             ├ CreateOrderDto.cs
@@ -151,10 +152,10 @@ Introduce a 'Shared' folder in the application layer for Data Transfer Objects (
 
 ├──Domain
 |    ├ Area   
-|       ├ AreaCategory
-|       ├ AreaMaster
-|       ├ MarketArea
-|       ├ DepotArea
+|       ├ AreaCategory.cs
+|       ├ AreaMaster.cs
+|       ├ MarketArea.cs
+|       ├ DepotArea.cs
 
 ```
 
@@ -169,12 +170,12 @@ Introduce a 'Shared' folder in the application layer for Data Transfer Objects (
 
 ├──Infrastructure
 |    ├ LocationUpdate   
-|    |   ├ Location
-|    |   ├ LocationHub
-|    |   ├ LocationMiddleWare
-|    |   ├ Startup
+|    |   ├ Location.cs
+|    |   ├ LocationHub.cs
+|    |   ├ LocationMiddleWare.cs
+|    |   ├ Startup.cs
 |    |
-|    ├ Startup
+|    ├ Startup.cs
 
 ```
  
