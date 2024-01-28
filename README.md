@@ -48,6 +48,9 @@ MSFA23
 |  |
 |  ├ Migrators  
 |  |    ├ Migrators.MSSQL  
+|  |    ├ Migrators.MySQL
+|  |    ├ Migrators.Oracle
+|  |    ├ Migrators.PostgreSQL
 |  |
 |  ├ Host
 |  ├ Infrastructure
@@ -206,8 +209,6 @@ _Why:_
 
   > This is a very well-known design to developers (your main API consumers). Apart from readability and ease of use, it allows us to write generic libraries and connectors without even knowing what the API is about.
 
-- use kebab-case for URLs.
-- use camelCase for parameters in the query string or resource fields.
 - Always use a plural nouns for naming a url pointing to a collection: `/users`.
 
   _Why:_
@@ -245,32 +246,18 @@ _Why:_
 
   ```json
   {
-    "code": 1234,
-    "message": "Something bad happened",
-    "description": "More details"
+  "messages": [
+    "string"
+  ],
+  
+  "source": "string",
+  "exception": "string",
+  "errorId": "string",
+  "supportMessage": "string",
+  "statusCode": 0
   }
   ```
 
-  or for validation errors:
-
-  ```json
-  {
-    "code": 2314,
-    "message": "Validation Failed",
-    "errors": [
-      {
-        "code": 1233,
-        "field": "email",
-        "message": "Invalid email"
-      },
-      {
-        "code": 1234,
-        "field": "password",
-        "message": "No password provided"
-      }
-    ]
-  }
-  ```
 
   _Why:_
 
@@ -305,11 +292,6 @@ _Why:_
 
 - Provide total numbers of resources in your response.
 - Accept `limit` and `offset` parameters.
-
-- The amount of data the resource exposes should also be taken into account. The API consumer doesn't always need the full representation of a resource. Use a fields query parameter that takes a comma separated list of fields to include:
-  ```
-  GET /students?fields=id,name,age,class
-  ```
 - Pagination, filtering, and sorting don’t need to be supported from start for all resources. Document those resources that offer filtering and sorting.
 
 <a name="api-security"></a>
