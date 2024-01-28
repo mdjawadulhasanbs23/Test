@@ -1,4 +1,7 @@
-# How to Run the Project Locally
+# MSFA
+
+Welcome to our MSFA GitHub repository! This repository contains the source code for our MSFA application. Below, you'll find essential information to help you understand, contribute to, and deploy the project.
+
 ## Prerequisites
 
 Before you begin, ensure that you have the following installed on your machine:
