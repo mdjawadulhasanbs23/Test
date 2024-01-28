@@ -7,7 +7,22 @@ Before you begin, ensure that you have the following installed on your machine:
 - [Visual Studio](https://visualstudio.microsoft.com/) or [Visual Studio Code](https://code.visualstudio.com/) 
 - [SQL Server Management Studio (SSMS)](https://learn.microsoft.com/en-us/sql/ssms/download-sql-server-management-studio-ssms?view=sql-server-ver16)
 
-## Instructions
+
+## Code Review Checklist
+
+Before submitting a pull request, please make sure to go through the following checklist:
+
+1. **Code Quality**: Ensure that your code adheres to our coding standards and best practices.
+2. **Documentation**: Update or create documentation for any new features, APIs, or changes to existing functionality.
+3. **Code Structure**: Verify that your code is well-organized and follows the project's directory structure.
+4. **Security**: Check for security vulnerabilities and follow secure coding practices.
+5. **Comments**: Include meaningful comments in your code to enhance readability.
+6. **Compatibility**: Ensure your changes do not break existing functionality and are compatible with the current codebase.
+7. **Pull Request Description**: Provide a clear and concise description of your changes in the pull request.
+
+## How to Run the Project Locally
+
+To run the MSFA App locally, follow these steps:
 
 1. **Clone the Repository**
    ```bash
@@ -31,7 +46,9 @@ Before you begin, ensure that you have the following installed on your machine:
    ```bash
    dotnet run --MSFA23/Host.WebApi
    
-   
+## Live Architectural Diagram
+
+View our live architectural diagram [here](https://drive.google.com/file/d/1l9cawdqxZcvz-EPoqxiWRGaz6UPD7yCv/view?usp=sharing).
    
  ## Coding Structure and Guidelines 
 **Folder Structure**
