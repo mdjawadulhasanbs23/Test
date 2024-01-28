@@ -31,13 +31,6 @@ Before you begin, ensure that you have the following installed on your machine:
 - [ ] Pull/merge request
 - [ ] Use tagging
  
-### Testing
-- [ ] Unit test code coverage
-- [ ] Integration test feature coverage
- 
-### Security
-- [ ] Use Sonarlint and security vulnerability analysis tool
-
 ## How to Run the Project Locally
 
 To run the MSFA App locally, follow these steps:
