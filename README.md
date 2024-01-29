@@ -3,7 +3,7 @@
 
 Before you begin, ensure that you have the following installed on your machine:
 
-- [.NET SDK](https://dotnet.microsoft.com/download)
+- [.NET 6.0 SDK](https://dotnet.microsoft.com/download)
 - [Visual Studio](https://visualstudio.microsoft.com/) or [Visual Studio Code](https://code.visualstudio.com/) 
 - [SQL Server Management Studio (SSMS)](https://learn.microsoft.com/en-us/sql/ssms/download-sql-server-management-studio-ssms?view=sql-server-ver16)
 
