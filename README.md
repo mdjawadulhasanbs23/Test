@@ -2,15 +2,6 @@
 
 Welcome to our MSFA GitHub repository! This repository contains the source code for our MSFA application. Below, you'll find essential information to help you understand, contribute to, and deploy the project.
 
-
-## Prerequisites
-
-Before you begin, ensure that you have the following installed on your machine:
-
-- [.NET 6.0 SDK](https://dotnet.microsoft.com/download)
-- [Visual Studio](https://visualstudio.microsoft.com/) or [Visual Studio Code](https://code.visualstudio.com/) 
-- [SQL Server Management Studio (SSMS)](https://learn.microsoft.com/en-us/sql/ssms/download-sql-server-management-studio-ssms?view=sql-server-ver16)
-
 # Code Review Checklist
  
 ### Requirements & Functionality
@@ -35,7 +26,16 @@ Before you begin, ensure that you have the following installed on your machine:
 - [ ] Pull/merge request
 - [ ] Use tagging
  
-## How to Run the Project Locally
+# How to Run the Project Locally
+## Prerequisites
+
+Before you begin, ensure that you have the following installed on your machine:
+
+- [.NET 6.0 SDK](https://dotnet.microsoft.com/download)
+- [Visual Studio](https://visualstudio.microsoft.com/) or [Visual Studio Code](https://code.visualstudio.com/) 
+- [SQL Server Management Studio (SSMS)](https://learn.microsoft.com/en-us/sql/ssms/download-sql-server-management-studio-ssms?view=sql-server-ver16)
+
+
 
 To run the MSFA App locally on windows , follow these steps:
 
