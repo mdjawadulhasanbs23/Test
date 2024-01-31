@@ -18,7 +18,7 @@ Welcome to our MSFA GitHub repository! This repository contains the source code 
 - [ ] Is the code formatted correctly? Unecessary whitespace removed? Same formatting throughout the code base. Code is fitted to the monitor screen? Properly Aligned?
  
 ### Performance
-- [ ] Optimize code- DB query, Looping, Conditions, Proper data type
+- [ ] Optimize code- DB query/Looping/Conditions/Proper data type
  
 ### Version Controlling
 - [ ] Maintain environment and feature branch
