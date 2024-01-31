@@ -1,4 +1,8 @@
-# How to Run the Project Locally
+# MSFA
+
+Welcome to our MSFA GitHub repository! This repository contains the source code for our MSFA application. Below, you'll find essential information to help you understand, contribute to, and deploy the project.
+
+
 ## Prerequisites
 
 Before you begin, ensure that you have the following installed on your machine:
@@ -33,7 +37,7 @@ Before you begin, ensure that you have the following installed on your machine:
  
 ## How to Run the Project Locally
 
-To run the MSFA App locally, follow these steps:
+To run the MSFA App locally on windows , follow these steps:
 
 1. **Clone the Repository**
    ```bash
@@ -322,51 +326,5 @@ _Why:_
 
 <a name="api-security"></a>
 
-### API security
 
-These are some basic security best practices:
-
-- Don't use basic authentication unless over a secure connection (HTTPS). Authentication tokens must not be transmitted in the URL: `GET /users/123?token=asdf....`
-
-  _Why:_
-
-  > Because Token, or user ID and password are passed over the network as clear text (it is base64 encoded, but base64 is a reversible encoding), the basic authentication scheme is not secure. [read more...](https://developer.mozilla.org/en-US/docs/Web/HTTP/Authentication)
-
-- Tokens must be transmitted using the Authorization header on every request: `Authorization: Bearer xxxxxx, Extra yyyyy`.
-
-- Authorization Code should be short-lived.
-
-- Reject any non-TLS requests by not responding to any HTTP request to avoid any insecure data exchange. Respond to HTTP requests by `403 Forbidden`.
-
-- Consider using Rate Limiting.
-
-  _Why:_
-
-  > To protect your APIs from bot threats that call your API thousands of times per hour. You should consider implementing rate limit early on.
-
-- Setting HTTP headers appropriately can help to lock down and secure your web application. [read more...](https://github.com/helmetjs/helmet)
-
-- Your API should convert the received data to their canonical form or reject them. Return 400 Bad Request with details about any errors from bad or missing data.
-
-- All the data exchanged with the REST API must be validated by the API.
-
-- Serialize your JSON.
-
-  _Why:_
-
-  > A key concern with JSON encoders is preventing arbitrary JavaScript remote code execution within the browser... or, if you're using node.js, on the server. It's vital that you use a proper JSON serializer to encode user-supplied data properly to prevent the execution of user-supplied input on the browser.
-
-- Validate the content-type and mostly use `application/*json` (Content-Type header).
-
-  _Why:_
-
-  > For instance, accepting the `application/x-www-form-urlencoded` mime type allows the attacker to create a form and trigger a simple POST request. The server should never assume the Content-Type. A lack of Content-Type header or an unexpected Content-Type header should result in the server rejecting the content with a `4XX` response.
-
-- Check the API Security Checklist Project. [read more...](https://github.com/shieldfy/API-Security-Checklist)
-
-<a name="api-documentation"></a>
-
-<a name="logging"></a>
-  
-  
   
